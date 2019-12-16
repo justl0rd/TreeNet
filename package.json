@@ -50,6 +50,6 @@
     "normalize.css": "^8.0.1",
     "normalize.min.css": "^8.0.0",
     "or": "^0.2.0",
-    "yarn": "^1.16.0"
+    "yarn": "^1.17.3"
   }
 }
