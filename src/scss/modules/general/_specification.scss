@@ -8,6 +8,7 @@ body {
 	letter-spacing: 0.02em;
 	line-height: 1.2em;
 	color: $main-text-color;
+	background: $light-color;
 	background-size: inherit;
 	font-family: $main-font;
 	font-style: normal;
@@ -20,14 +21,14 @@ body {
 a {
 	text-decoration: none;
 	letter-spacing: 0.02em;
-	line-height: 1.2em;
+	line-height: 1.4em;
 }
 
 p {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0.02em;
-	line-height: 1.2em;
+	line-height: 1.4em;
 }
 
 ul,
@@ -36,7 +37,7 @@ li {
 	padding: 0;
 	margin: 0;
 	letter-spacing: 0.02em;
-	line-height: 1.2em;
+	line-height: 1.4em;
 }
 
 h1,
@@ -53,19 +54,19 @@ h6 {
 }
 
 h1 {
-	font-size: rem(35);
+	font-size: rem(40);
 }
 
 h2 {
-	font-size: rem(30);
+	font-size: rem(33);
 }
 
 h3 {
-	font-size: rem(26);
+	font-size: rem(29);
 }
 
 h4 {
-	font-size: rem(22);
+	font-size: rem(24);
 }
 
 h5 {
@@ -79,7 +80,7 @@ h6 {
 a,
 a:hover,
 a:active  {
-	transition: all 0.4s ease;
+	transition: all 0.3s ease;
 	text-decoration: none;
 	color: inherit;
 }
@@ -101,6 +102,35 @@ button {
 	border: none;
 }
 
+.btn {
+	display: flex;
+    vertical-align: middle;
+    margin: 0;
+	padding: 15px;
+	min-width: 150px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-transition: background-color .25s ease-out;
+    -o-transition: background-color .25s ease-out;
+    transition: background-color .25s ease-out;
+    font-family: inherit;
+    font-size: 1.125rem;
+    -webkit-appearance: none;
+    line-height: 1.125rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: fit-content;
+    cursor: pointer;
+    background-color: $secondary-color;
+	color: $light-text-color;
+	
+	&:hover {
+		color: $light-text-color;
+		background-color: $midle-color;
+	}
+}
+
 input {
 	background: transparent;
 	border: none;
@@ -118,4 +148,19 @@ input {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.container {
+	padding: 0 calc(50% - 590px);
+}
+
+.ttu {
+	text-transform: uppercase;
+}
+.tac {
+	text-align: center;
+}
+
+.title-h2 {
+	margin-bottom: 2rem;
 }

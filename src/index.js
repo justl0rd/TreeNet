@@ -2,8 +2,8 @@
 // JS - ./js/index.js
 import './js/'
 
-// import './js/owl.carousel.min.js'
-// import './js/owl-config.js'
+import './js/owl.carousel.min.js'
+import './js/owl-config.js'
 // SCSS
 import './scss/main.scss'
 // CSS (example)

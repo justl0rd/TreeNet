@@ -1,15 +1,41 @@
 .header {
-   
-}
+    &__topbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo-link {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+    }
+    &__logo {
+        display: block;
+        object-fit: contain;
+        width: 100%;
+    }
+    &__nav {
 
-@media only screen and (max-width : 992px) {
+        background: $main-color;
+        color: $light-text-color;
 
-}
+        ul {
+            display: flex;
+            justify-content: space-between;
+            
+            li {
 
-@media only screen and (max-width : 768px) {
-
-}
-
-@media only screen and (max-width : 576px) {
-
+                a {
+                    padding: 1rem 2rem;
+                    width: 100%;
+                    display: block;
+                    &:hover {
+                        background: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
 }
